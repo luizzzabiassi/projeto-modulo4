@@ -1,0 +1,27 @@
+{
+  "name": "projeto-modulo4",
+  "version": "1.0.0",
+  "description": "Pacotes para o projeto.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizzzabiassi/projeto-modulo4.git"
+  },
+  "author": "Luiza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizzzabiassi/projeto-modulo4/issues"
+  },
+  "homepage": "https://github.com/luizzzabiassi/projeto-modulo4#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "sqlite3": "^5.0.2"
+  }
+}
