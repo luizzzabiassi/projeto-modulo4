@@ -2,10 +2,12 @@
   "name": "projeto-modulo4",
   "version": "1.0.0",
   "description": "Pacotes para o projeto.",
-  "main": "../src/index.js",
+  "main": "./src/server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ../src/index.js"
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
+    "populate": "node ./src/infra/create-and-insert.js"
   },
   "repository": {
     "type": "git",
