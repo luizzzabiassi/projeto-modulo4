@@ -1,5 +1,5 @@
-const sqlite = require('sqlite3').verbose();
-const db = new sqlite.Database('./db-pub.db');
+const sqlite = require('sqlite3').verbose()
+const db = new sqlite.Database('./src/infra/db-pub.db')
 
 // Fechando o banco de dados
 process.on('SIGINT', () => db.close(() => {
@@ -7,4 +7,4 @@ process.on('SIGINT', () => db.close(() => {
     process.exit(0);
 }))
 
-module.exports = db;
+module.exports = db
