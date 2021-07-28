@@ -6,12 +6,7 @@ module.exports = class PetiscoDao {
     getAllPetiscos(){
         return new Promise((resolve, reject) => {
             this.db.all(`select * from PETISCOS`, (err, rows) => {
-                if(err){
-                    reject(err)
-                }
-                else{
-                    resolve(rows)
-                }
+                err ? reject(err) : resolve(rows)
             })
         })
     }
@@ -19,12 +14,7 @@ module.exports = class PetiscoDao {
     getIdPetisco(id){
         return new Promise((resolve, reject) => {
             this.db.get(`select * from PETISCOS where id = ?`, id, (err, rows) => {
-                if(err){
-                    reject(err)
-                }
-                else{
-                    resolve(rows)
-                }
+                err ? reject(err) : resolve(rows)
             })
         })
     }
@@ -32,12 +22,7 @@ module.exports = class PetiscoDao {
     postPetisco(petisco){
         return new Promise((resolve, reject) => {
             this.db.run(`insert into PETISCOS(nome, descricao_prato, preco) values(?, ?, ?)`, Object.values(petisco), err => {
-                if(err){
-                    reject(err)
-                }
-                else{
-                    resolve()
-                }
+                err ? reject(err) : resolve()
             })
         })
     }
@@ -45,12 +30,7 @@ module.exports = class PetiscoDao {
     deletePetisco(id){
         return new Promise((resolve, reject) => {
             this.db.run(`delete from PETISCOS where id = ?`, id, err => {
-                if(err){
-                    reject(err)
-                }
-                else{
-                    resolve()
-                }
+                err ? reject(err) : resolve()
             })
         })
     }
@@ -94,12 +74,7 @@ module.exports = class PetiscoDao {
             newArray.push(id)
             return new Promise((resolve, reject) => {
                 this.db.run(sql, newArray, err => {
-                    if(err){
-                        reject(err)
-                    }
-                    else{
-                        resolve()
-                    }
+                    err ? reject(err) : resolve()
                 })
             })
         }
