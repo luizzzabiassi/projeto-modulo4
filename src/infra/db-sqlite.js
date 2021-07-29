@@ -1,3 +1,4 @@
+// Importando SQLite3 e criando um banco dados pelo arquivo 'db-pub.db'
 const sqlite = require('sqlite3').verbose()
 const db = new sqlite.Database('./src/infra/db-pub.db')
 
@@ -7,4 +8,5 @@ process.on('SIGINT', () => db.close(() => {
     process.exit(0);
 }))
 
+// Exportando variável
 module.exports = db
