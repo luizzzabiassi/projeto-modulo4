@@ -4,7 +4,7 @@
   "description": "Pacotes para o projeto.",
   "main": "./src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev": "nodemon ./src/server.js",
     "start": "node ./src/server.js",
     "populate": "node ./src/infra/create-and-insert.js"
@@ -20,7 +20,9 @@
   },
   "homepage": "https://github.com/luizzzabiassi/projeto-modulo4#readme",
   "devDependencies": {
-    "nodemon": "^2.0.12"
+    "jest": "^27.0.6",
+    "nodemon": "^2.0.12",
+    "supertest": "^6.1.4"
   },
   "dependencies": {
     "express": "^4.17.1",
