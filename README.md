@@ -95,26 +95,26 @@ npm run test
 - O método POST foi projetado para solicitar que o servidor web aceite os dados anexados no corpo da mensagem de requisição para armazenamento.
 - A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/) são as mais conhecidas), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port_**.
 - Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
-- ## FOTO
+![print-post](./img/post.png)
 ***
 ### Read - **GET**:
 - O método GET cria uma sequência de consulta e acrescenta à URL do script no servidor que manipula a solicitação. Esse método é o padrão de todas as URL's e basicamente é para a leitura dos mesmos. Nesse projeto foi criado dois tipo de requisições com GET:
 1. **GET/path**
 - Com o servidor rodando e sua ferramenta escolhida aberta, você seleciona o método GET e ao lado a URL para a requisição, sendo ela: **_localhost:port_**. Ao clicar no botão **_Send_** ele retornará todos os dados da API.
-- ## FOTO
+![print-get](./img/get.png)
 2. **GET/path/id**
 - Não muito diferente da requisição acima, o método também será o GET porém depois do caminho será aplicado o **_ID_** de um registro, para caso precisa olhar algum específico. Com o método GET selecionado e a URL digitada, após ela você adiciona **_/2_** por exemplo, para consultar o registro de ID 2:
-- ## FOTO
+![print-get-id](./img/getid.png)
 ***
 ### Update - **PUT**:
 - O método PUT cria um novo recurso ou subsititui uma representação do recurso de destino com os novos dados, atualizando o mesmo com as novas informações passadas.
 - Este não é o único método existente para atualização de dados, além do **_PUT_** existe também o **_PATCH_**. A diferença dos dois é que o PUT é usado para alteração completa de um dado, já o PATCH é para uma mudança parcial, de algum campo específico
 - Nesta API foi utilizada somente requisições PUT para atualizações. Não muito diferente da requisição em POST, a única diferença é que ao lado da URL você precisará informar também um **_ID_**, para servir de referência a qual dado será modificado:
-- ## FOTO
+![print-put](./img/put.png)
 ***
 ### Delete - **DELETE**:
 - Como o nome já entrega, o método DELETE tem a função de remover algum recurso que foi especificado, no caso das nossa requisições ele irá deletar o **_ID_** informado após a URL passada:
-- ## FOTO
+![print-delete](./img/delete.png)
 ***
 ## 👩🏻‍🏫 Considerações finais:
 1. Após a utilização de alguns métodos, se você quer confirmar se a ação deu realmente certo, faça uma requisição GET e veja se o dado foi adcionado, alterado ou deletado.
