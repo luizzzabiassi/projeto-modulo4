@@ -106,7 +106,7 @@ npm run test
 ***
 ### Create - **POST**:
 - O método POST foi projetado para solicitar que o servidor web aceite os dados anexados no corpo da mensagem de requisição para armazenamento.
-- A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/) são as mais conhecidas), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port_**.
+- A partir de uma ferramenta para consulta de requisições ([Postman](https://www.postman.com/) e [Insomnia](https://insomnia.rest/) são as mais conhecidas), você pode consultar a API por esse e outros métodos. Nesse caso, a requisição será feita escolhendo o método POST e informando a URL **_localhost:port/petiscos_**.
 - Verifique antes se o seu servidor está rodando, se não, não será possível testar esse e outros métodos. Depois de especificar a requisição, abra o **_body_** da mesma e escolha a opção **_JSON_** para inserir os dados que você quiser a partir das colunas existentes no banco. Após isso, clique em **_Send_** para mandar essa requisição:
 ![post](https://user-images.githubusercontent.com/81346924/127515332-1971b081-ef3d-4a8e-9fc7-93151c2d9765.png)
 
