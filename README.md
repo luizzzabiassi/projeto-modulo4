@@ -114,11 +114,11 @@ npm run test
 ### Read - **GET**:
 - O método GET cria uma sequência de consulta e acrescenta à URL do script no servidor que manipula a solicitação. Esse método é o padrão de todas as URL's e basicamente é para a leitura dos mesmos. Nesse projeto foi criado dois tipo de requisições com GET:
 1. **GET/path**
-- Com o servidor rodando e sua ferramenta escolhida aberta, você seleciona o método GET e ao lado a URL para a requisição, sendo ela: **_localhost:port_**. Ao clicar no botão **_Send_** ele retornará todos os dados da API:
+- Com o servidor rodando e sua ferramenta escolhida aberta, você seleciona o método GET e ao lado a URL para a requisição, sendo ela: **_localhost:port/petiscos_**. Ao clicar no botão **_Send_** ele retornará todos os dados da API:
 ![get](https://user-images.githubusercontent.com/81346924/127515079-62e6a0f7-13ab-4b08-9188-05c960c4af9c.png)
 
 2. **GET/path/id**
-- Não muito diferente da requisição acima, o método também será o GET porém depois do caminho será aplicado o **_ID_** de um registro, para caso precisa olhar algum específico. Com o método GET selecionado e a URL digitada, após ela você adiciona **_/2_** por exemplo, para consultar o registro de ID 2:
+- Não muito diferente da requisição acima, o método também será o GET porém depois do caminho será aplicado o **_ID_** de um registro, para o caso de precisar verificar algum registro específico. Com o método GET selecionado e a URL digitada, após ela você adiciona **_/2_** por exemplo, para consultar o registro de ID 2:
 ![getid](https://user-images.githubusercontent.com/81346924/127515234-a255b54b-ecdc-4b4e-bf91-12510d603697.png)
 
 ***
