@@ -136,6 +136,6 @@ npm run test
 ***
 ## 👩🏻‍🏫 Considerações finais:
 1. Após a utilização de alguns métodos, se você quer confirmar se a ação deu realmente certo, faça uma requisição GET e veja se o dado foi adcionado, alterado ou deletado.
-2. Confirme se todos os scripst estão aplicados e se as dependências foram instaladas corretamente para uma utilização melhor da API.
+2. Confirme se todos os scripts estão aplicados e se as dependências foram instaladas corretamente para uma utilização melhor da API.
 3. Feito por [Luiza Biassi](https://github.com/luizzzabiassi) 💕
 ***
